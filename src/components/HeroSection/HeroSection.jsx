@@ -6,7 +6,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const HeroSection = () => {
   return (
-    <div className="p-6 md:p-10 flex flex-col items-center md:flex-row md:justify-around">
+    <div className="p-6 md:p-24 flex flex-col items-center md:flex-row md:justify-around">
       <div className="w-full md:w-1/2 md:order-2 flex justify-center md:justify-end mt-10 md:mt-0">
         <img className="w-64 md:w-80 rounded-lg shadow-lg" src={mypic} alt="Satish" />
       </div>
