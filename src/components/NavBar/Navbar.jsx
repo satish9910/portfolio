@@ -11,7 +11,7 @@ const Navbar = ({ isDarkMode, toggleDarkMode }) => {
 
   return (
     <>
-      <div className=" flex justify-between items-center p-3">
+      <div className= {`${isDarkMode ?  "bg-white text-black": "bg-[#030712] text-white"} flex justify-between items-center p-3`}>
         <div>
           <h3 className="text-2xl">Satish</h3>
         </div>
