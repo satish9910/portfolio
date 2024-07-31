@@ -4,6 +4,7 @@ import Navbar from './components/NavBar/Navbar'
 import HeroSection from './components/HeroSection/HeroSection';
 import About from './components/About/About';
 import Skill from './components/Skill/Skill';
+import Experience from './components/Experience/Experience';
 
 function App() {
   const [isDarkMode, setIsDarkMode] = React.useState(false);
@@ -14,7 +15,8 @@ function App() {
     <Navbar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode}/>
     <HeroSection  isDarkMode={isDarkMode} />
     <About  isDarkMode={isDarkMode}/>
-    <Skill/>
+    <Skill isDarkMode={isDarkMode}/>
+    <Experience/>
 
     </div>
   )

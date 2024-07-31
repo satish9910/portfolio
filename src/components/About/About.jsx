@@ -3,8 +3,8 @@ import mypic from "../../assets/mypic.jpg"
 
 const About = ({ isDarkMode }) => {
   return (
-    <div className={`${isDarkMode ?  "bg-white text-black": "bg-[#111827] text-white"} text-center`} >
-    <span className='header'>About</span>
+    <div className={`${isDarkMode ?  "bg-white text-black": "bg-[#111827] text-white"}`} >
+    <p className='header'>About</p>
     <div className=" flex flex-col md:flex-row md:justify-around items-center md:p-24 p-10">
     <div>
       <img
