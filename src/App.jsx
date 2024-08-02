@@ -7,6 +7,7 @@ import Skill from './components/Skill/Skill';
 import Experience from './components/Experience/Experience';
 import Work from './components/Work/Work';
 import Testimonials from './components/Testimonials/Testimonials';
+import Contact from './components/Contact/Contact';
 
 function App() {
   const [isDarkMode, setIsDarkMode] = React.useState(false);
@@ -18,9 +19,10 @@ function App() {
     <HeroSection  isDarkMode={isDarkMode} />
     <About  isDarkMode={isDarkMode}/>
     <Skill isDarkMode={isDarkMode}/>
-    <Experience/>
-    <Work/>
-    <Testimonials/>
+    <Experience isDarkMode={isDarkMode}/>
+    <Work isDarkMode={isDarkMode}/>
+    <Testimonials isDarkMode={isDarkMode}/>
+    <Contact isDarkMode={isDarkMode}/>
 
     </div>
   )

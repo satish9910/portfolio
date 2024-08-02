@@ -1,7 +1,7 @@
 import React from "react";
 import Cards from "./Cards";
 
-const Experience = () => {
+const Experience = ({isDarkMode}) => {
   const cardData = [
     {
       companyName: "techninza",
@@ -27,9 +27,9 @@ const Experience = () => {
   
   ];
   return (
-    <div className="bg-[#111827] md:text-center p-3">
+    <div className={`${isDarkMode ? "bg-[#FFFFFF] text-[#4B5563]":"bg-[#111827] text-[#D1D5DB]" } md:text-center p-3 `}>
       <p className="header ">Experience</p>
-      <p className="text-white">
+      <p>
         Here is a quick summary of my most recent experiences:
       </p>
 
@@ -40,6 +40,7 @@ const Experience = () => {
           position={card.position}
           description={card.description}
           duration={card.duration}
+          isDarkMode={isDarkMode}
         /> //here we are passing the props to Cards component.
       ))}
     </div>

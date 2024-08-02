@@ -2,7 +2,7 @@ import React from "react";
 import img from "../../assets/img";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
-const WorkCard = () => {
+const WorkCard = ({isDarkMode}) => {
   const skillData = [
     { skillName: "React" },
     { skillName: "Nextjs" },
@@ -15,7 +15,7 @@ const WorkCard = () => {
   ];
 
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center mt-10 text-[#D1D5DB]">
+    <div className={`${isDarkMode ?"bg-[#FFFFFF] text-[#4B5563] shadow-xl":"bg-[#1F2937] text-[#F9FAFB]" } flex flex-col md:flex-row justify-center items-center mt-10`}>
       <div className="bg-[#4B5563] w-full md:w-[40%] md:h-[480px] flex items-center justify-center md:rounded-l-lg p-4">
         <img className="md:w-[480px] md:h-[383px] w-full h-auto" src={img.ss} alt="Project Screenshot" />
       </div>
