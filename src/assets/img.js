@@ -7,7 +7,8 @@ import Next from "./Nextjs.png";
 import node from "./nodejs.png";
 import tailwind from "./tailwind.png";
 import ts from "./ts.png";
-
+import ss from "./ss.png";
+import testiAvtar from "./testiAvtar.png";
 
 
 
@@ -21,7 +22,11 @@ import ts from "./ts.png";
     node:node,
     tailwind:tailwind,
     ts:ts,
-}
+    ss:ss,
+    testiAvtar:testiAvtar,
+ 
+ };
+
 export default img;
 
 

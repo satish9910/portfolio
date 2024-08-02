@@ -3,6 +3,7 @@ import mypic from "../../assets/mypic.jpg"
 
 const About = ({ isDarkMode }) => {
   return (
+    <section id='about'>
     <div className={`${isDarkMode ?  "bg-white text-black": "bg-[#111827] text-white"}`} >
     <p className='header'>About</p>
     <div className=" flex flex-col md:flex-row md:justify-around items-center md:p-24 p-10">
@@ -29,6 +30,7 @@ const About = ({ isDarkMode }) => {
     </div>
     </div>
   </div>
+  </section>
   )
 }
 
